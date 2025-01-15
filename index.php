@@ -29,10 +29,12 @@ if (isset($_POST["search"]) ) {
     <a href="add.php">Add Data</a>
     <br><br>
     <form action="" method="POST">
-        <input type="text" name="keyword" size="40" autofocus placeholder="Cari data" autocomplete="off">
-        <button type="submit" name="search">Search</button>
+        <input type="text" name="keyword" size="40" autofocus placeholder="Cari data" autocomplete="off" id="keyword">
+        <button type="submit" name="search" id="tombol-cari">Search</button>
     </form>
     <br>
+
+    <div id="container">
 
     <table border="1" cellpadding="10" cellspacing="0">
         
@@ -64,5 +66,8 @@ if (isset($_POST["search"]) ) {
 
 
     </table>
+    </div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
